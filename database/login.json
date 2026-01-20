@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "username": "numpang",
+      "password": "numpang123",
+      "label": "Log in as Numpang"
+    },
+    {
+      "username": "midori",
+      "password": "midori123",
+      "label": "Log in as Emiry"
+    }
+  ]
+}

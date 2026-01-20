@@ -1,0 +1,211 @@
+/* General Body */
+body, #root {
+  margin: 0;
+  font-family: "Playfair Display", serif;;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3e8ff, #d1fae5, #f3e8ff);
+  width: 100%;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: linear-gradient(0deg, #2fcd98, #360e94);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+header .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* Anniversary Counter Section */
+.counter-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.counter-box {
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 2rem;
+  border: 1px solid #410087;
+}
+
+.counter-gradient {
+  background: linear-gradient(0deg, #2fcd98, #360e94);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.counter-gradient p:first-child {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.counter-gradient p:last-child {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.counter-section p.description {
+  color: #4b5563;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Gallery */
+.gallery-container {
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 2rem;
+  border: 1px solid #a7f3d0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-main {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.2), transparent);
+}
+
+.gallery-counter {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.gallery-counter span {
+  background: rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 500;
+}
+
+/* Gallery Arrows */
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  padding: 0.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow-left { left: 1rem; }
+.arrow-right { right: 1rem; }
+
+/* Thumbnails */
+.gallery-thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.gallery-thumbs button {
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.gallery-thumbs button.active {
+  border-color: #2fcd98;
+  transform: scale(1.1);
+}
+
+.gallery-thumbs img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+/* Love Message */
+.love-message {
+  text-align: center;
+  background: linear-gradient(0deg, #2fcd98, #360e94);
+  padding: 2rem;
+  border-radius: 2rem;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(45deg, #2fcd98, #360e94);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
