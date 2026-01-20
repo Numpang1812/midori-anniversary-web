@@ -10,15 +10,15 @@ const App = () => {
   
   // Custom gallery images - replace these URLs with your actual image URLs
   const galleryImages = [
-    './src/assets/together (1).jpg',
-    './src/assets/together (2).jpg',
-    './src/assets/together (3).jpg',
-    './src/assets/together (4).jpg',
-    './src/assets/together (5).jpg',
-    './src/assets/together (6).jpg',
-    './src/assets/together (7).jpg',
-    './src/assets/together (8).jpg',
-    './src/assets/together (9).jpg',
+    '/src/assets/together (1).jpg',
+    '/src/assets/together (2).jpg',
+    '/src/assets/together (3).jpg',
+    '/src/assets/together (4).jpg',
+    '/src/assets/together (5).jpg',
+    '/src/assets/together (6).jpg',
+    '/src/assets/together (7).jpg',
+    '/src/assets/together (8).jpg',
+    '/src/assets/together (9).jpg',
   ];
 
   const nextImage = () => {
