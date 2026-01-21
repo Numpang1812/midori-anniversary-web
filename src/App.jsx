@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Heart, Calendar, Camera, Sparkles, ArrowLeft, ArrowRight, User } from 'lucide-react';
 import img1 from './assets/together (1).jpg';
 import img2 from './assets/together (2).jpg';
@@ -83,9 +83,17 @@ const App = () => {
     }
   };
 
-  // Calculate days since January 22nd, 2025
+  // Calculate days since January 22nd, 2025 (uses real current date)
   const startDate = new Date('2025-01-22');
-  const today = new Date('2026-01-20'); // Using the current actual time from system prompt
+  // Keep `today` in state so it updates while the app is open.
+  const [today, setToday] = useState(new Date());
+
+  useEffect(() => {
+    // update `today` every minute so the counter stays current
+    const id = setInterval(() => setToday(new Date()), 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+
   const diffTime = Math.abs(today - startDate);
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
