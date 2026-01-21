@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 import { Heart, Calendar, Camera, Sparkles, ArrowLeft, ArrowRight, User } from 'lucide-react';
+import img1 from './assets/together (1).jpg';
+import img2 from './assets/together (2).jpg';
+import img3 from './assets/together (3).jpg';
+import img4 from './assets/together (4).jpg';
+import img5 from './assets/together (5).jpg';
+import img6 from './assets/together (6).jpg';
+import img7 from './assets/together (7).jpg';
+import img8 from './assets/together (8).jpg';
+import img9 from './assets/together (9).jpg';
 import './css/Styles.css';
 
 const App = () => {
@@ -10,15 +19,15 @@ const App = () => {
   
   // Custom gallery images - replace these URLs with your actual image URLs
   const galleryImages = [
-    '/src/assets/together (1).jpg',
-    '/src/assets/together (2).jpg',
-    '/src/assets/together (3).jpg',
-    '/src/assets/together (4).jpg',
-    '/src/assets/together (5).jpg',
-    '/src/assets/together (6).jpg',
-    '/src/assets/together (7).jpg',
-    '/src/assets/together (8).jpg',
-    '/src/assets/together (9).jpg',
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
   ];
 
   const nextImage = () => {
